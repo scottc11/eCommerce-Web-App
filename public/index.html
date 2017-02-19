@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>EuroPanels</title>
+
+  <link rel="stylesheet" href="vendor/bootstrap-3.3.7/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <!-- Load external fonts here -->
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,600|Aldrich|Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Shade|Monofett" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Londrina+Outline" rel="stylesheet">
+
+
+  <!-- Load main css here -->
+  <link rel="stylesheet" href="styles/global.css" media="screen">
+  <link rel="stylesheet" href="styles/colors.css" media="screen">
+  <link rel="stylesheet" href="styles/main.css" media="screen">
+  <link rel="stylesheet" href="styles/responsive.css" media="screen">
+
+</head>
+
+<body ng-app="templateApp" class="bg-color-bitter-lemon">
+
+  <div ng-controller="mainCtrl as app" class="container">
+
+    <div id="site-header" class="row">
+      <h1 class="font-bungee-outline color-accent-yellow">ESSY</h1>
+
+      <div class="">
+
+      </div>
+    </div>
+
+    <div class="row margin-top-40">
+
+      <div class="col-xs-12 col-sm-2 arrow">
+        <i class="left-arrow vertical-center fa fa-chevron-left fa-5x" aria-hidden="true"></i>
+      </div>
+
+      <main id="product-container" ng-class="$root.appBackground" class="col-xs-12 col-sm-8 box-shadow-outer-heavy padding-none">
+        <div ng-view></div>
+      </main>
+
+      <div class="col-xs-12 col-sm-2 arrow">
+        <i class="right-arrow vertical-center fa fa-chevron-right fa-5x" aria-hidden="true"></i>
+      </div>
+
+      <ng-include src="'templates/footer.html'"></ng-include>
+
+    </div>
+  </div>
+
+
+  <footer>
+    <!-- VENDOR SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-route.min.js"></script>
+    <script type="text/javascript" src="vendor/masonry/masonry.pkgd.min.js"></script>
+
+    <!-- ANGULAR APPLICATION SCRIPT -->
+    <script type="text/javascript" src="scripts/app.js"></script>
+
+
+    <!-- controllers -->
+    <script type="text/javascript" src="scripts/controllers/main.ctrl.js"></script>
+
+
+    <!-- services -->
+    <script type="text/javascript" src="scripts/services/data.service.js"></script>
+
+    <!-- directives -->
+    <script type="text/javascript" src="scripts/directives/custom.directive.js"></script>
+
+
+    <!-- CUSTOM SCRIPTS -->
+
+
+  </footer>
+
+</body>
+
+</html>
