@@ -6,9 +6,9 @@ angular.module('templateApp', ['ngRoute'])
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '../templates/main.html',
-        controller: 'mainCtrl',
-        controllerAs: 'main'
+        templateUrl: '../templates/product.html',
+        controller: 'productCtrl',
+        controllerAs: 'product'
       })
       .otherwise({
         templateUrl: '../templates/main.html',

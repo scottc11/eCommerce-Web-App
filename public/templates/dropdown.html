@@ -1,0 +1,13 @@
+<div class="dropdown-container bg-color-gunmetal">
+
+	<div class="product-label">
+	  <label class="font-bungee-hairline vertical-center">{{app.mockListData[2].name}}</label>
+	</div>
+
+	<span ng-click="app.show()" ng-class="{'glyphicon-chevron-up': app.listVisible == true, 'glyphicon-chevron-down': app.listVisible == false}" class="vertical-centre color-accent-white expander glyphicon"></span>
+	<div class="dropdown-display bg-color-gunmetal" ng-show="app.listVisible" ng-class="{ clicked: app.listVisible }">
+		<div ng-repeat="product in app.mockListData" class="dropdown-item" ng-click="vm.select(user)">
+			<h3>{{product.name}}</h3>
+		</div>
+	</div>
+</div>

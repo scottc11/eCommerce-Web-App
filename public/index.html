@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="styles/global.css" media="screen">
   <link rel="stylesheet" href="styles/colors.css" media="screen">
   <link rel="stylesheet" href="styles/main.css" media="screen">
+  <link rel="stylesheet" href="styles/dropdown.css" media="screen">
   <link rel="stylesheet" href="styles/responsive.css" media="screen">
 
 </head>
@@ -25,11 +26,11 @@
 
   <div ng-controller="mainCtrl as app" class="container">
 
-    <div id="site-header" class="row">
-      <h1 class="font-bungee-outline color-accent-yellow">ESSY</h1>
+    <div id="site-header" class="row margin-top-20">
+      <h1 class="col-xs-12 col-sm-6 font-bungee-outline color-accent-black margin-none">ESSY</h1>
 
-      <div class="">
-
+      <div class="col-xs-12 col-sm-6">
+        <ng-include src="'templates/dropdown.html'"></ng-include>
       </div>
     </div>
 
